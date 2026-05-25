@@ -1,7 +1,7 @@
 ---
 name: task-pulse-workflow
 description: "Use when the user requests any actionable work (coding, PPT, research, testing, config backup) that produces a deliverable. Creates a task-pulse task record before execution, properly grouped and tracked."
-version: 1.1.0
+version: 1.2.0
 author: Hermes Agent
 license: MIT
 metadata:
@@ -132,6 +132,15 @@ dashboard 的 SubTaskRow 会自动显示分类标签。
 - 任务 ID 出现在：API 响应、task-pulse JSON 文件、会话日志中
 - 只要任务曾在此会话中被创建或讨论过，就能找到对应上下文
 
+### 8. 开发规范（task-pulse 功能更新）
+
+当对 task-pulse 本身进行功能更新（前端 UI 改动、后端 API 扩展、流程改进等）时：
+
+- **用中文写** — 功能更新描述、Git commit message、代码注释全部使用中文
+- 优先使用 OpenCode 执行（`runner: "opencode"`），非代码类的简易补丁（如改一行文案）可直接用 `patch` 等工具
+- 功能更新归入 `task-Pluse 完善` 分组，不要归到其他组
+- 修改前端后需重新构建（`next build`）+ 重启（`next start`）才能生效
+
 ## 与其他 Hermes 功能的关系
 
 - **Hermes Kanban** (`kanban-orchestrator`, `kanban-worker`): 与 task-pulse 是互补关系。Kanban 管理 Hermes 自身的多 agent 编排；task-pulse 管理面向用户的产出任务。当用户直接要求做事时走 task-pulse；当 Hermes 需要拆分子任务给 agent 时走 Kanban。
@@ -140,16 +149,20 @@ dashboard 的 SubTaskRow 会自动显示分类标签。
 ## References
 
 加载本 skill 后，`skill_view(name='task-pulse-workflow', file_path='references/api-examples.md')` 查看更多实操示例。
+`skill_view(name='task-pulse-workflow', file_path='references/task-id-recall.md')` — 用任务 ID 回忆对话的完整指南。
+`skill_view(name='task-pulse-workflow', file_path='references/cron-daily-review.md')` — 每日 cron 审查的完整配置和输出格式。
+`skill_view(name='task-pulse-workflow', file_path='references/task-launcher-ui-patterns.md')` — Task Launcher 组件 UI 约定（模型选择器、返回按钮等）。
 
 ## Common Pitfalls
 
-1. **跳过建任务直接干活** — 用户强调所有操作走 task 方便管理。即使操作很简单也必须建。
+1. **分大小，不是一刀切** — 秒级小改动（改颜色/typo/间距等）直接改，不必预先建 task，改完知会一声即可。但**新功能、多文件改动、重构、GitHub push** 等关键节点，必须先建 task 再动手。这是刚性规则，不跳过。
 2. **非代码工作不豁免** — PPT 生成、文档撰写、截图、调研分析、配置备份等 Hermes 手动操作同样必须建任务。
 3. **先建任务再干活，不是干完再补** — 任务应该以 `queued` 状态出现在 dashboard 上，等做完再更新状态。
 4. **分组名太通用** — "项目开发"太笼统，必须用有辨识度的名字。不确定时先查已有分组。
 5. **大任务标题模糊** — "完善一下"不行，要"agent 仓库 README 补全"这样清晰的。
 6. **demo 模式任务会自动跑完** — 模拟进度，real 模式才需要 runner 进程。
 7. **修改任务文件后需要重启 next server** — 或者等 demo simulation 完成。
+8. **功能更新 / commit / 代码注释没写中文** — 用户明确要求 task-pulse 的所有功能更新、Git commit、代码注释都用中文写。不要写成英文。
 
 ## Verification Checklist
 
