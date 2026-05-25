@@ -41,12 +41,18 @@ POST http://localhost:3000/api/tasks
 
 ### 2. 分组规则（重要）
 
-- **task-pulse 相关任务** → 归入 `"task-Pluse 完善"` 组
-- **agent 仓库相关任务** → 归入 `"agent 仓库联调"` 组
-- **其他项目** → 按项目名创建对应分组
-- **严禁**随意扔到"项目开发"等通用分组
-- ❌ 反例：PPT 是关于 task-pulse 的，却放到 "项目开发" 组
-- ✅ 正例：PPT 是关于 task-pulse 的，放在 "task-Pluse 完善" 组
+分组名必须有辨识度，**严禁使用 "项目开发" 等通用名称**。
+
+| 项目 | 分组名 |
+|------|--------|
+| task-pulse / 任务面板相关 | `task-Pluse 完善` |
+| agent 仓库相关 | `agent 仓库联调` |
+| Hermes Agent 配置备份 | `task-Pluse 完善` |
+| 新项目 | 按项目名命名，如 `xxx 开发` |
+
+- ❌ **反例**：把 PPT/备份/测试随意扔到"项目开发"
+- ✅ **正例**：task-pulse 的 PPT → "task-Pluse 完善"，agent 仓库改进 → "agent 仓库联调"
+- 如果不确定分组名，先检查已有任务有哪些组，选最接近的
 
 ### 3. 标题规范
 
