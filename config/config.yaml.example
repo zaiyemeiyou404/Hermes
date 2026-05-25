@@ -1,0 +1,27 @@
+# Hermes Agent Configuration — Example (redact secrets before use)
+# Copy to ~/.hermes/config.yaml and fill in your own keys.
+
+model:
+  default: gpt-5.4
+  provider: openai-codex
+providers: {}
+toolsets:
+  - hermes-cli
+
+agent:
+  max_turns: 90
+  gateway_timeout: 1800
+  api_max_retries: 3
+  reasoning_effort: medium
+  # ... other defaults ...
+
+# === CHANNELS ===
+weixin:
+  app_id: "YOUR_WX_APP_ID"
+  token: "YOUR_WX_TOKEN"
+  # ...
+
+# === CREDENTIALS (set via env or config) ===
+# GITHUB_TOKEN: your_github_pat
+# DEEPSEEK_API_KEY: your_deepseek_key
+# OPENAI_API_KEY: your_openai_key
