@@ -14,6 +14,7 @@ Hermes/
 │   ├── memories/               # 记忆文件（你是谁，我是谁）
 │   │   ├── MEMORY.md           # 环境/项目/工具笔记
 │   │   └── USER.md             # 用户画像（偏好、沟通风格）
+│   ├── skills/                 # 技能文件（task-pulse-workflow 等）
 │   ├── scripts/                # 自定义脚本
 │   │   └── cloakbrowser-server.py  # CloakBrowser 服务端
 │   └── persona/
@@ -41,6 +42,9 @@ git clone https://github.com/zaiyemeiyou404/Hermes.git ~/Hermes
 
 # 恢复记忆
 cp ~/Hermes/backup/memories/* ~/.hermes/memories/
+
+# 恢复技能
+cp -r ~/Hermes/backup/skills/* ~/.hermes/skills/
 
 # 恢复人设
 cp ~/Hermes/backup/persona/* ~/.hermes/hermes-agent/agent/persona/
