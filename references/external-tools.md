@@ -26,14 +26,13 @@
 
 ## Task Pulse (任务管理面板)
 - **用途**: 可视化任务管理，dashboard + 实时详情
-- **位置**: `/home/ubuntu/task-pulse/`
+- **GitHub**: https://github.com/zaiyemeiyou404/task-Pluse
 - **启动**: 
   ```bash
   cd ~/task-pulse
-  npx next build
-  npx next start -p 3000
+  npx next build && npx next start -p 3000
   ```
-- **域名**: https://pulse.zaiyemeiyou.com (Caddy 反向代理)
+- **配置**: 详见 `references/task-pulse.md`
 
 ## n8n (工作流引擎)
 - **用途**: 自动化工作流，Hermes 通过 webhook 与 n8n 联动
