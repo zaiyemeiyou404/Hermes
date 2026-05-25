@@ -1,6 +1,8 @@
 # Hermes Agent — Personal Backup
 
-这是我的 Hermes Agent 完整配置备份。在新机器上部署 Hermes 后，执行以下步骤即可恢复。
+这是我的 Hermes Agent 完整配置备份（含记忆、技能、脚本、人设、外部工具参考）。
+
+> ⚠️ 外部工具（PPT Master、Task Pulse、CloakBrowser 等）是独立项目，本仓库只保存安装说明和引用配置，不包含完整项目文件。
 
 ## 目录结构
 
