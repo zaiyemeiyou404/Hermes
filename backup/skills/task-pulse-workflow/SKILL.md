@@ -83,7 +83,7 @@ curl -s -X POST http://localhost:3000/api/tasks \
 - ❌ 反例：把 PPT/备份/测试随意扔到"项目开发"
 - ✅ 正例：task-pulse 的 PPT → `task-Pluse 完善`，agent 仓库改进 → `agent 仓库联调`
 - 如果不确定分组名，先 GET `/api/tasks` 检查已有任务有哪些组，选最接近的
-- HIGH GROUP: 分组是**大任务**的标识，决定了 dashboard 上的展示结构
+- 分组是**大任务**的标识，决定了 dashboard 上的展示结构。**Hermes 主动发起的操作（如备份配置、系统维护）同样需要建独立分组**
 
 ### 3. 标题规范
 
@@ -110,6 +110,27 @@ dashboard 的 SubTaskRow 会自动显示分类标签。
 创建任务后可通过 `GET /api/tasks` 查看最新状态。SSE 实时流在详情页自动连接。
 
 状态流转：`queued` → `running` → `done|failed|stopped|blocked|approval_required`
+
+### 6. 每日定时检查 + 审查
+
+每天凌晨 5:00 执行 `task-pulse-daily-check` cron job，通过微信发送日报到 origin：
+
+**检查内容：**
+- ✅ 按分组统计任务数量
+- ✅ 标记异常状态（blocked、approval_required、running 超 1h、failed）
+- ✅ **分组名审查** — 检测"项目开发""默认"等无辨识度名称，标记需改名
+- ✅ **分类整理检查** — 检测缺失分类、分类与标题不符、可合并的重复任务
+- ✅ 一切正常则简洁报告
+
+无需手动触发，已配置好持续运行。如需查看或修改：`hermes cron list`。
+
+### 7. 通过任务 ID 回忆对话
+
+用户提供 task-pulse 任务 ID（如 `task_1779708691142_1`）时，用 `session_search` 搜索该 ID 或任务标题在历史会话中的上下文。
+
+- 搜索基于文本关键词，最好附带一两句描述提高准确率
+- 任务 ID 出现在：API 响应、task-pulse JSON 文件、会话日志中
+- 只要任务曾在此会话中被创建或讨论过，就能找到对应上下文
 
 ## 与其他 Hermes 功能的关系
 
