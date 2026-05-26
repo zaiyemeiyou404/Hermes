@@ -122,6 +122,18 @@ dashboard 的 SubTaskRow 会自动显示分类标签。
 - ✅ **分类整理检查** — 检测缺失分类、分类与标题不符、可合并的重复任务
 - ✅ 一切正常则简洁报告
 
+**配置详情：**
+- 调度：`0 5 * * *`（每天北京时间 5:00）
+- 交付：微信 origin
+- 模型：`gpt-5.4`（openai-codex provider）
+
+**⚠️ 常见问题**：创建 cron job 时**必须显式设置 model 和 provider**，否则 openai-codex 会因 model 为空报错：
+```
+RuntimeError: Codex Responses request 'model' must be a non-empty string.
+```
+
+完整配置参考：`skill_view(name='task-pulse-workflow', file_path='references/cron-daily-review.md')`
+
 无需手动触发，已配置好持续运行。如需查看或修改：`hermes cron list`。
 
 ### 7. 通过任务 ID 回忆对话
@@ -152,6 +164,7 @@ dashboard 的 SubTaskRow 会自动显示分类标签。
 `skill_view(name='task-pulse-workflow', file_path='references/task-id-recall.md')` — 用任务 ID 回忆对话的完整指南。
 `skill_view(name='task-pulse-workflow', file_path='references/cron-daily-review.md')` — 每日 cron 审查的完整配置和输出格式。
 `skill_view(name='task-pulse-workflow', file_path='references/task-launcher-ui-patterns.md')` — Task Launcher 组件 UI 约定（模型选择器、返回按钮等）。
+`skill_view(name='task-pulse-workflow', file_path='references/batch-task-reorganization.md')` — 批量整改 task 分组/分类/元数据的脚本模式。
 
 ## Common Pitfalls
 

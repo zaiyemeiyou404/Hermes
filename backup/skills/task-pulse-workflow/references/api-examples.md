@@ -6,14 +6,20 @@
 import urllib.request, json
 
 def create_task(title, category="coding", group_name="task-Pluse 完善",
-                runner="hermes", mode="demo", repo_link=None):
-    """Create a task-pulse task. Returns (task_id, response_dict)."""
+                runner="hermes", mode="demo", repo_link=None,
+                model="deepseek/deepseek-chat"):
+    """Create a task-pulse task. Returns (task_id, response_dict).
+    
+    model: 任务启动器（launcher UI）现已支持自定义模型名。
+           默认 deepseek/deepseek-chat，可改为 deepseek/deepseek-reasoner,
+           gpt-4o, gpt-4o-mini, o3-mini 等。
+    """
     payload = {
         "title": title,
         "prompt": title,
         "category": category,
         "runner": runner,
-        "model": "deepseek/deepseek-chat",
+        "model": model,
         "source": "微信",
         "mode": mode,
         "groupName": group_name,
