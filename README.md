@@ -33,14 +33,14 @@ Hermes/
 # 1. 安装 Hermes Agent（如未安装）
 curl -fsSL https://hermes-agent.nousresearch.com/install.sh | sh
 
-# 2. 克隆本仓库
-git clone https://github.com/zaiyemeiyou404/Hermes.git ~/Hermes
+# 2. 克隆本仓库（可克隆到任意路径）
+git clone https://github.com/zaiyemeiyou404/Hermes.git
 
 # 3. 执行一键恢复脚本
-cd ~/Hermes && bash setup.sh
+cd Hermes && bash setup.sh
 
 # 4. 配置 API 密钥（复制模板后编辑）
-cp ~/Hermes/config/config.yaml.example ~/.hermes/config.yaml
+cp config/config.yaml.example ~/.hermes/config.yaml
 # 编辑 ~/.hermes/config.yaml 填入真实密钥
 
 # 5. 重启 Hermes
@@ -56,16 +56,17 @@ hermes gateway restart
 ## 分步手动恢复（可选）
 
 ```bash
-git clone https://github.com/zaiyemeiyou404/Hermes.git ~/Hermes
-cp ~/Hermes/backup/memories/* ~/.hermes/memories/
-cp -r ~/Hermes/backup/skills/* ~/.hermes/skills/
-cp ~/Hermes/backup/persona/AGENTS.md ~/.hermes/hermes-agent/AGENTS.md
-cp ~/Hermes/backup/scripts/* ~/.hermes/scripts/
+git clone https://github.com/zaiyemeiyou404/Hermes.git
+cd Hermes
+cp backup/memories/* ~/.hermes/memories/
+cp -r backup/skills/* ~/.hermes/skills/
+cp backup/persona/AGENTS.md ~/.hermes/hermes-agent/AGENTS.md
+cp backup/scripts/* ~/.hermes/scripts/
 chmod +x ~/.hermes/scripts/*.py
-cp ~/Hermes/config/config.yaml.example ~/.hermes/config.yaml
+cp config/config.yaml.example ~/.hermes/config.yaml
 # 编辑 ~/.hermes/config.yaml 填入密钥
 git clone https://github.com/zaiyemeiyou404/task-Pluse.git ~/task-pulse
-cp -r ~/Hermes/backup/task-pulse-data ~/task-pulse/.task-pulse-data
+cp -r backup/task-pulse-data ~/task-pulse/.task-pulse-data
 hermes gateway restart
 ```
 
@@ -90,5 +91,5 @@ export DEEPSEEK_API_KEY="your_deepseek_key"
 - **不要提交敏感信息**：`.env`、`auth.json`、`config.yaml`（含真实 token）不在备份范围内
 - `backup/skills/` 是当前服务器 **活跃 skills 集合** 的镜像备份；缓存、归档、hub 索引等已排除
 - `config/config.yaml.example` 由当前服务器 `~/.hermes/config.yaml` 脱敏导出，保留行为配置但不保留密钥
-- 每次修改技能或记忆后，记得 `cd ~/Hermes && git commit -am "update" && git push`
+- 每次修改技能或记忆后，记得进入仓库目录执行 `git commit -am "update" && git push`
 - 本仓库不包含 secrets —— 需手动填入 API Key（见 config.yaml.example 模板）

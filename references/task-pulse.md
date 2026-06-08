@@ -30,10 +30,10 @@ cd ~/task-pulse && npx next build && npx next start -p 3000
 `.task-pulse-data/` — 每个任务一个 JSON 文件，文件即数据库。
 
 ## 备份与恢复
-运行时数据快照已纳入 Hermes 备份仓库 `~/Hermes/backup/task-pulse-data/`。
+运行时数据快照已纳入 Hermes 备份仓库（`backup/task-pulse-data/`）。
 
-- **备份**: 运行 `cp -r ~/task-pulse/.task-pulse-data ~/Hermes/backup/task-pulse-data`
-- **恢复**: `setup.sh` 会自动拉取 `task-Pluse` 仓库代码到 `~/task-pulse`，并将快照恢复到 `~/task-pulse/.task-pulse-data`。如有 npm，还会自动执行 `npm install`。
+- **备份**: 运行 `cp -r ~/task-pulse/.task-pulse-data <repo-root>/backup/task-pulse-data`
+- **恢复**: `setup.sh`（位于仓库根目录）会自动拉取 `task-Pluse` 仓库代码到 `~/task-pulse`，并将快照恢复到 `~/task-pulse/.task-pulse-data`。如有 npm，还会自动执行 `npm install`。
 
 ## 部署域名
 https://pulse.zaiyemeiyou.com (Caddy 反向代理 → localhost:3000)

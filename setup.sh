@@ -5,8 +5,9 @@ echo "=== Hermes Agent — Full Restore Script ==="
 echo "Restores memories, skills, persona, scripts, Task Pulse data, and clones Task Pulse project."
 echo ""
 
+REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
 HERMES_HOME="${HERMES_HOME:-$HOME/.hermes}"
-BACKUP_DIR="$HOME/Hermes/backup"
+BACKUP_DIR="$REPO_ROOT/backup"
 TASK_PULSE_DIR="$HOME/task-pulse"
 TASK_PULSE_REPO="https://github.com/zaiyemeiyou404/task-Pluse.git"
 
@@ -43,13 +44,11 @@ if [ -d "$BACKUP_DIR/skills" ]; then
 fi
 
 # 4. Restore scripts
-for script in cloakbrowser-server.py task-pulse-cleanup.py; do
-  if [ -f "$BACKUP_DIR/scripts/$script" ]; then
-    cp "$BACKUP_DIR/scripts/$script" "$HERMES_HOME/scripts/"
-    chmod +x "$HERMES_HOME/scripts/$script"
-    echo "✅ $script restored"
-  fi
-done
+if [ -d "$BACKUP_DIR/scripts" ]; then
+  cp -r "$BACKUP_DIR/scripts/." "$HERMES_HOME/scripts/"
+  find "$HERMES_HOME/scripts" -name '*.py' -exec chmod +x {} +
+  echo "✅ Scripts restored from backup/scripts"
+fi
 
 # 5. Restore persona (AGENTS.md — Hermes Agent development guide)
 if [ -f "$BACKUP_DIR/persona/AGENTS.md" ]; then
@@ -58,9 +57,9 @@ if [ -f "$BACKUP_DIR/persona/AGENTS.md" ]; then
 fi
 
 # 6. Config example hint
-if [ -f "$HOME/Hermes/config/config.yaml.example" ]; then
+if [ -f "$REPO_ROOT/config/config.yaml.example" ]; then
   echo ""
-  echo "⚠️  Config template available at: ~/Hermes/config/config.yaml.example"
+  echo "⚠️  Config template available at: $REPO_ROOT/config/config.yaml.example"
   echo "   Copy to $HERMES_HOME/config.yaml and fill in your API keys"
 fi
 
