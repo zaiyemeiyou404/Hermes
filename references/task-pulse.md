@@ -20,7 +20,7 @@ npx next build          # 编译
 npx next start -p 3000  # 启动（生产模式）
 ```
 
-或从 GitHub 克隆：
+或从 GitHub 克隆（注意仓库名大小写：`task-Pluse`，P 大写）：
 ```bash
 git clone https://github.com/zaiyemeiyou404/task-Pluse.git ~/task-pulse
 cd ~/task-pulse && npx next build && npx next start -p 3000
@@ -33,7 +33,7 @@ cd ~/task-pulse && npx next build && npx next start -p 3000
 运行时数据快照已纳入 Hermes 备份仓库 `~/Hermes/backup/task-pulse-data/`。
 
 - **备份**: 运行 `cp -r ~/task-pulse/.task-pulse-data ~/Hermes/backup/task-pulse-data`
-- **恢复**: `setup.sh` 自动将快照恢复到 `~/task-pulse/.task-pulse-data`
+- **恢复**: `setup.sh` 会自动拉取 `task-Pluse` 仓库代码到 `~/task-pulse`，并将快照恢复到 `~/task-pulse/.task-pulse-data`。如有 npm，还会自动执行 `npm install`。
 
 ## 部署域名
 https://pulse.zaiyemeiyou.com (Caddy 反向代理 → localhost:3000)

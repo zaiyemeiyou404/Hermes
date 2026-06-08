@@ -1,10 +1,27 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "=== Hermes Agent Restore Script ==="
+echo "=== Hermes Agent — Full Restore Script ==="
+echo "Restores memories, skills, persona, scripts, Task Pulse data, and clones Task Pulse project."
+echo ""
 
 HERMES_HOME="${HERMES_HOME:-$HOME/.hermes}"
 BACKUP_DIR="$HOME/Hermes/backup"
+TASK_PULSE_DIR="$HOME/task-pulse"
+TASK_PULSE_REPO="https://github.com/zaiyemeiyou404/task-Pluse.git"
+
+# --- Preflight: check for required commands ---
+MISSING=""
+for cmd in git cp mkdir chmod; do
+  if ! command -v "$cmd" &>/dev/null 2>&1; then
+    MISSING="$MISSING $cmd"
+  fi
+done
+if [ -n "$MISSING" ]; then
+  echo "ERROR: missing required commands:$MISSING"
+  echo "Please install the packages that provide them and re-run."
+  exit 1
+fi
 
 # 1. Ensure Hermes config directory exists
 mkdir -p "$HERMES_HOME/memories" "$HERMES_HOME/scripts" "$HERMES_HOME/hermes-agent" "$HERMES_HOME/skills"
@@ -47,12 +64,35 @@ if [ -f "$HOME/Hermes/config/config.yaml.example" ]; then
   echo "   Copy to $HERMES_HOME/config.yaml and fill in your API keys"
 fi
 
+# 7. Clone / update Task Pulse project
 echo ""
-# 7. Restore Task Pulse runtime data
+echo "--- Task Pulse ---"
+if [ -d "$TASK_PULSE_DIR/.git" ]; then
+  echo "Updating existing Task Pulse repository..."
+  git -C "$TASK_PULSE_DIR" pull --ff-only
+else
+  echo "Cloning Task Pulse repository..."
+  git clone "$TASK_PULSE_REPO" "$TASK_PULSE_DIR"
+fi
+
+# 8. Restore Task Pulse runtime data
 if [ -d "$BACKUP_DIR/task-pulse-data" ]; then
-  mkdir -p "$HOME/task-pulse"
-  cp -r "$BACKUP_DIR/task-pulse-data" "$HOME/task-pulse/.task-pulse-data"
-  echo "✅ Task Pulse runtime data restored to ~/task-pulse/.task-pulse-data"
+  mkdir -p "$TASK_PULSE_DIR"
+  rm -rf "$TASK_PULSE_DIR/.task-pulse-data"
+  cp -r "$BACKUP_DIR/task-pulse-data" "$TASK_PULSE_DIR/.task-pulse-data"
+  echo "✅ Task Pulse runtime data restored to $TASK_PULSE_DIR/.task-pulse-data"
+fi
+
+# 9. npm install (if npm is available)
+if command -v npm &>/dev/null 2>&1; then
+  echo ""
+  echo "Running npm install in $TASK_PULSE_DIR..."
+  npm --prefix "$TASK_PULSE_DIR" install
+  echo "✅ npm install completed"
+else
+  echo ""
+  echo "⚠️  npm not found — skipped npm install in $TASK_PULSE_DIR"
+  echo "   Install Node.js manually, then run: cd $TASK_PULSE_DIR && npm install"
 fi
 
 echo ""
