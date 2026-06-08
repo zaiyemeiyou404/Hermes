@@ -1,0 +1,298 @@
+{
+  "task": {
+    "id": "task_1779368435026_1",
+    "title": "OpenCode runtime smoke test",
+    "prompt": "Read README.md in the current repository and output a single-sentence summary. Do not modify any files.",
+    "status": "done",
+    "phase": "completed",
+    "category": "coding",
+    "runner": "opencode",
+    "model": "deepseek/deepseek-chat",
+    "source": "smoke-test",
+    "summary": "OpenCode session started.",
+    "progressText": "Task completed successfully",
+    "needsHuman": false,
+    "startedAt": "2026-05-21T13:00:35.026Z",
+    "updatedAt": "2026-05-21T13:03:29.080Z",
+    "endedAt": "2026-05-21T13:03:29.080Z",
+    "durationMs": 174054,
+    "eventCount": 11,
+    "logCount": 6,
+    "notificationCount": 4,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "live",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "live",
+      "launcherPid": 105816,
+      "dataFile": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779368435026_1.json",
+      "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779368435026_1.worker.log",
+      "runner": "opencode",
+      "workerPid": 105818,
+      "pid": 105834,
+      "model": "deepseek/deepseek-chat",
+      "sessionID": "ses_1b5605ad1ffeBh1qizRv0TFBuP",
+      "groupName": "Task Pulse 完善",
+      "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+      "repoLink": "https://github.com/zaiyemeiyou404/task-pulse"
+    },
+    "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+    "repoLink": "https://github.com/zaiyemeiyou404/task-pulse",
+    "groupName": "Task Pulse 完善"
+  },
+  "events": [
+    {
+      "id": "evt_1779368609080_ltf7f3",
+      "taskId": "task_1779368435026_1",
+      "type": "task.completed",
+      "level": "success",
+      "message": "OpenCode run completed",
+      "payload": {
+        "cost": 0.000560616,
+        "tokens": {
+          "total": 9998,
+          "input": 2398,
+          "output": 48,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 7552
+          }
+        },
+        "reason": "stop"
+      },
+      "createdAt": "2026-05-21T13:03:29.080Z"
+    },
+    {
+      "id": "evt_1779368607971_onlr7j",
+      "taskId": "task_1779368435026_1",
+      "type": "opencode.started",
+      "level": "info",
+      "message": "OpenCode session started",
+      "payload": {
+        "sessionID": "ses_1b5605ad1ffeBh1qizRv0TFBuP",
+        "runner": "/home/ubuntu/.hermes/node/bin/opencode"
+      },
+      "createdAt": "2026-05-21T13:03:27.971Z"
+    },
+    {
+      "id": "evt_1779368606967_ll70so",
+      "taskId": "task_1779368435026_1",
+      "type": "opencode.tool",
+      "level": "info",
+      "message": "OpenCode used read",
+      "payload": {
+        "tool": "read",
+        "status": "completed",
+        "callID": "call_00_ibjojJ9DlcQJiYvFTylq3397"
+      },
+      "createdAt": "2026-05-21T13:03:26.967Z"
+    },
+    {
+      "id": "evt_1779368606703_k9txrh",
+      "taskId": "task_1779368435026_1",
+      "type": "opencode.started",
+      "level": "info",
+      "message": "OpenCode session started",
+      "payload": {
+        "sessionID": "ses_1b5605ad1ffeBh1qizRv0TFBuP",
+        "runner": "/home/ubuntu/.hermes/node/bin/opencode"
+      },
+      "createdAt": "2026-05-21T13:03:26.703Z"
+    },
+    {
+      "id": "evt_1779368606702_2tpjgg",
+      "taskId": "task_1779368435026_1",
+      "type": "task.unblocked",
+      "level": "success",
+      "message": "Runner output resumed",
+      "payload": {},
+      "createdAt": "2026-05-21T13:03:26.702Z"
+    },
+    {
+      "id": "evt_1779368555179_r3vppl",
+      "taskId": "task_1779368435026_1",
+      "type": "task.blocked",
+      "level": "warning",
+      "message": "Runner produced no output for over 2 minutes",
+      "payload": {
+        "idleMs": 120077
+      },
+      "createdAt": "2026-05-21T13:02:35.179Z"
+    },
+    {
+      "id": "evt_1779368435100_frtsa7",
+      "taskId": "task_1779368435026_1",
+      "type": "runner.started",
+      "level": "info",
+      "message": "OpenCode process spawned",
+      "payload": {
+        "pid": 105834,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerPid": 105818
+      },
+      "createdAt": "2026-05-21T13:00:35.100Z"
+    },
+    {
+      "id": "evt_1779368435091_i5vonx",
+      "taskId": "task_1779368435026_1",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "Preparing detached OpenCode worker",
+      "payload": {
+        "workerPid": 105818
+      },
+      "createdAt": "2026-05-21T13:00:35.091Z"
+    },
+    {
+      "id": "evt_1779368435034_5",
+      "taskId": "task_1779368435026_1",
+      "type": "runner.started",
+      "level": "info",
+      "message": "OpenCode worker 已启动",
+      "payload": {
+        "launcherPid": 105816,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779368435026_1.worker.log",
+        "runner": "opencode"
+      },
+      "createdAt": "2026-05-21T13:00:35.034Z"
+    },
+    {
+      "id": "evt_1779368435028_3",
+      "taskId": "task_1779368435026_1",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "准备启动 OpenCode worker",
+      "payload": {
+        "cwd": "/home/ubuntu/task-pulse",
+        "script": "/home/ubuntu/task-pulse/scripts/task-pulse-live-runner.js",
+        "runner": "opencode"
+      },
+      "createdAt": "2026-05-21T13:00:35.028Z"
+    },
+    {
+      "id": "evt_1779368435026_2",
+      "taskId": "task_1779368435026_1",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "smoke-test",
+        "mode": "live"
+      },
+      "createdAt": "2026-05-21T13:00:35.026Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1779368435028_4",
+      "taskId": "task_1779368435026_1",
+      "stream": "system",
+      "level": "info",
+      "content": "正在排队启动 OpenCode 于 /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-21T13:00:35.028Z"
+    },
+    {
+      "id": "log_1779368435091_oilfvk",
+      "taskId": "task_1779368435026_1",
+      "stream": "system",
+      "level": "info",
+      "content": "Detached worker 105818 booted",
+      "createdAt": "2026-05-21T13:00:35.091Z"
+    },
+    {
+      "id": "log_1779368435100_i31zqn",
+      "taskId": "task_1779368435026_1",
+      "stream": "system",
+      "level": "info",
+      "content": "Launching /home/ubuntu/.hermes/node/bin/opencode in /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-21T13:00:35.100Z"
+    },
+    {
+      "id": "log_1779368606966_x6n6dv",
+      "taskId": "task_1779368435026_1",
+      "stream": "system",
+      "level": "info",
+      "content": "tool:read status=completed",
+      "createdAt": "2026-05-21T13:03:26.967Z"
+    },
+    {
+      "id": "log_1779368609050_1pral1",
+      "taskId": "task_1779368435026_1",
+      "stream": "stdout",
+      "level": "info",
+      "content": "Task Pulse is a real-time task dashboard built with Next.js App Router, designed for AI Agent/coding runners to provide observable event streams, logs, status timelines, and artifact panels that make it easy to monitor task execution in a browser.",
+      "createdAt": "2026-05-21T13:03:29.050Z"
+    },
+    {
+      "id": "log_1779368609080_whswtl",
+      "taskId": "task_1779368435026_1",
+      "stream": "system",
+      "level": "success",
+      "content": "OpenCode finished. tokens=9998 cost=0.000560616",
+      "createdAt": "2026-05-21T13:03:29.080Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1779368609080_bsfj8o",
+      "taskId": "task_1779368435026_1",
+      "name": "task_1779368435026_1-summary.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1779368435026_1",
+      "createdAt": "2026-05-21T13:03:29.080Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1779368609080_cz51ev",
+      "taskId": "task_1779368435026_1",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779368435026_1"
+      },
+      "createdAt": "2026-05-21T13:03:29.080Z"
+    },
+    {
+      "id": "ntf_1779368607971_6llsbz",
+      "taskId": "task_1779368435026_1",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779368435026_1"
+      },
+      "createdAt": "2026-05-21T13:03:27.971Z"
+    },
+    {
+      "id": "ntf_1779368606703_t7eawz",
+      "taskId": "task_1779368435026_1",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779368435026_1"
+      },
+      "createdAt": "2026-05-21T13:03:26.703Z"
+    },
+    {
+      "id": "ntf_1779368555179_81ssaw",
+      "taskId": "task_1779368435026_1",
+      "channel": "weixin",
+      "eventType": "task.blocked",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779368435026_1"
+      },
+      "createdAt": "2026-05-21T13:02:35.179Z"
+    }
+  ],
+  "version": 16
+}

@@ -1,0 +1,179 @@
+{
+  "task": {
+    "id": "task_1779368681393_11",
+    "title": "Hermes supported-model smoke test",
+    "prompt": "Read README.md in the current repository and reply with one concise Chinese sentence summarizing this project. Do not modify any files.",
+    "status": "done",
+    "phase": "completed",
+    "category": "chat",
+    "runner": "hermes",
+    "model": "gpt-5.4",
+    "source": "smoke-test",
+    "summary": "正在启动 Hermes Agent。",
+    "progressText": "Hermes 任务已完成",
+    "needsHuman": false,
+    "startedAt": "2026-05-21T13:04:41.393Z",
+    "updatedAt": "2026-05-21T13:04:54.629Z",
+    "endedAt": "2026-05-21T13:04:54.629Z",
+    "durationMs": 13236,
+    "eventCount": 6,
+    "logCount": 5,
+    "notificationCount": 1,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "live",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "live",
+      "launcherPid": 107213,
+      "dataFile": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779368681393_11.json",
+      "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779368681393_11.worker.log",
+      "runner": "hermes",
+      "workerPid": 107215,
+      "pid": 107223,
+      "model": "gpt-5.4",
+      "toolsets": "terminal,web",
+      "groupName": "Hermes 配置与验证",
+      "groupId": "group_hermes-配置与验证-https-github-com-zaiyemeiyou404-her",
+      "repoLink": "https://github.com/zaiyemeiyou404/Hermes"
+    },
+    "groupId": "group_hermes-配置与验证-https-github-com-zaiyemeiyou404-her",
+    "repoLink": "https://github.com/zaiyemeiyou404/Hermes",
+    "groupName": "Hermes 配置与验证"
+  },
+  "events": [
+    {
+      "id": "evt_1779368694629_62r1ac",
+      "taskId": "task_1779368681393_11",
+      "type": "runner.exited",
+      "level": "success",
+      "message": "Hermes 进程已正常退出",
+      "payload": {
+        "code": 0
+      },
+      "createdAt": "2026-05-21T13:04:54.629Z"
+    },
+    {
+      "id": "evt_1779368681441_4728cy",
+      "taskId": "task_1779368681393_11",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Hermes Agent 已启动",
+      "payload": {
+        "pid": 107223,
+        "cwd": "/home/ubuntu/task-pulse",
+        "model": "gpt-5.4",
+        "toolsets": "terminal,web"
+      },
+      "createdAt": "2026-05-21T13:04:41.441Z"
+    },
+    {
+      "id": "evt_1779368681435_yk3s9w",
+      "taskId": "task_1779368681393_11",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "准备启动 Hermes Agent",
+      "payload": {
+        "workerPid": 107215,
+        "category": "chat"
+      },
+      "createdAt": "2026-05-21T13:04:41.435Z"
+    },
+    {
+      "id": "evt_1779368681399_15",
+      "taskId": "task_1779368681393_11",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Hermes worker 已启动",
+      "payload": {
+        "launcherPid": 107213,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779368681393_11.worker.log",
+        "runner": "hermes"
+      },
+      "createdAt": "2026-05-21T13:04:41.399Z"
+    },
+    {
+      "id": "evt_1779368681394_13",
+      "taskId": "task_1779368681393_11",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "准备启动 Hermes worker",
+      "payload": {
+        "cwd": "/home/ubuntu/task-pulse",
+        "script": "/home/ubuntu/task-pulse/scripts/task-pulse-hermes-runner.js",
+        "runner": "hermes"
+      },
+      "createdAt": "2026-05-21T13:04:41.394Z"
+    },
+    {
+      "id": "evt_1779368681393_12",
+      "taskId": "task_1779368681393_11",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "smoke-test",
+        "mode": "live"
+      },
+      "createdAt": "2026-05-21T13:04:41.393Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1779368681394_14",
+      "taskId": "task_1779368681393_11",
+      "stream": "system",
+      "level": "info",
+      "content": "正在排队启动 Hermes 于 /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-21T13:04:41.394Z"
+    },
+    {
+      "id": "log_1779368681435_bykul3",
+      "taskId": "task_1779368681393_11",
+      "stream": "system",
+      "level": "info",
+      "content": "Hermes worker 107215 已启动",
+      "createdAt": "2026-05-21T13:04:41.435Z"
+    },
+    {
+      "id": "log_1779368681441_r587ck",
+      "taskId": "task_1779368681393_11",
+      "stream": "system",
+      "level": "info",
+      "content": "执行: hermes chat -q \"Read README.md in the current repository and reply with one concise Chinese sent...\" --model gpt-5.4",
+      "createdAt": "2026-05-21T13:04:41.441Z"
+    },
+    {
+      "id": "log_1779368694013_xa4vzj",
+      "taskId": "task_1779368681393_11",
+      "stream": "stdout",
+      "level": "info",
+      "content": "这是一个基于 Next.js 构建的面向 AI Agent 执行器的实时任务看板，用于可视化展示任务状态、事件流、日志、时间线和产物。",
+      "createdAt": "2026-05-21T13:04:54.013Z"
+    },
+    {
+      "id": "log_1779368694014_fgod5s",
+      "taskId": "task_1779368681393_11",
+      "stream": "stderr",
+      "level": "warning",
+      "content": "session_id: 20260521_210443_7b70ca",
+      "createdAt": "2026-05-21T13:04:54.014Z"
+    }
+  ],
+  "artifacts": [],
+  "notifications": [
+    {
+      "id": "ntf_1779368694629_pqln10",
+      "taskId": "task_1779368681393_11",
+      "channel": "微信",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779368681393_11"
+      },
+      "createdAt": "2026-05-21T13:04:54.629Z"
+    }
+  ],
+  "version": 11
+}

@@ -1,0 +1,198 @@
+{
+  "task": {
+    "id": "task_1779850646830_41",
+    "title": "验证码破解技术详解 PPT（PPT Master 管线）",
+    "prompt": "用 PPT Master 管线制作西电 IDS 滑块验证码破解技术详解PPT。12页内容：封面、背景与整体流程、HTMLParser、验证码图片获取、AES密钥彩蛋、NCC模板匹配原理、NCC代码解析、AES-CBC加密、Sigmoid轨迹生成、完整代码串讲、逆向方法总结、致谢。",
+    "status": "failed",
+    "phase": "failed",
+    "category": "ppt",
+    "runner": "hermes",
+    "model": "deepseek/deepseek-chat",
+    "source": "微信",
+    "summary": "Hermes 以代码 1 退出。",
+    "progressText": "Hermes 退出码: 1",
+    "needsHuman": false,
+    "startedAt": "2026-05-27T02:57:26.830Z",
+    "updatedAt": "2026-05-27T02:57:34.571Z",
+    "endedAt": "2026-05-27T02:57:34.571Z",
+    "durationMs": 7741,
+    "eventCount": 6,
+    "logCount": 7,
+    "notificationCount": 1,
+    "progressPercent": 10,
+    "metadata": {
+      "mode": "live",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "live",
+      "groupId": "group_agent-仓库完善-https-github-com-zaiyemeiyou404-agent",
+      "groupName": "Agent 仓库完善",
+      "repoLink": "https://github.com/zaiyemeiyou404/agent",
+      "launcherPid": 2403465,
+      "dataFile": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779850646830_41.json",
+      "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779850646830_41.worker.log",
+      "runner": "hermes",
+      "workerPid": 2403467,
+      "pid": 2403476,
+      "model": "deepseek/deepseek-chat",
+      "toolsets": "terminal,file,web"
+    },
+    "groupId": "group_agent-仓库完善-https-github-com-zaiyemeiyou404-agent",
+    "repoLink": "https://github.com/zaiyemeiyou404/agent",
+    "groupName": "Agent 仓库完善"
+  },
+  "events": [
+    {
+      "id": "evt_1779850654571_vf2jog",
+      "taskId": "task_1779850646830_41",
+      "type": "runner.exited",
+      "level": "error",
+      "message": "Hermes 进程异常退出",
+      "payload": {
+        "code": 1,
+        "signal": null
+      },
+      "createdAt": "2026-05-27T02:57:34.571Z"
+    },
+    {
+      "id": "evt_1779850648229_7rjyxc",
+      "taskId": "task_1779850646830_41",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Hermes Agent 已启动",
+      "payload": {
+        "pid": 2403476,
+        "cwd": "/home/ubuntu/task-pulse",
+        "model": "deepseek/deepseek-chat",
+        "toolsets": "terminal,file,web"
+      },
+      "createdAt": "2026-05-27T02:57:28.229Z"
+    },
+    {
+      "id": "evt_1779850648214_qzofj4",
+      "taskId": "task_1779850646830_41",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "准备启动 Hermes Agent",
+      "payload": {
+        "workerPid": 2403467,
+        "category": "ppt"
+      },
+      "createdAt": "2026-05-27T02:57:28.214Z"
+    },
+    {
+      "id": "evt_1779850646845_45",
+      "taskId": "task_1779850646830_41",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Hermes worker 已启动",
+      "payload": {
+        "launcherPid": 2403465,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779850646830_41.worker.log",
+        "runner": "hermes"
+      },
+      "createdAt": "2026-05-27T02:57:26.845Z"
+    },
+    {
+      "id": "evt_1779850646831_43",
+      "taskId": "task_1779850646830_41",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "准备启动 Hermes worker",
+      "payload": {
+        "cwd": "/home/ubuntu/task-pulse",
+        "script": "/home/ubuntu/task-pulse/scripts/task-pulse-hermes-runner.js",
+        "runner": "hermes"
+      },
+      "createdAt": "2026-05-27T02:57:26.831Z"
+    },
+    {
+      "id": "evt_1779850646830_42",
+      "taskId": "task_1779850646830_41",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "微信",
+        "mode": "live",
+        "groupId": "group_agent-仓库完善-github-com-zaiyemeiyou404-agent",
+        "groupName": "Agent 仓库完善"
+      },
+      "createdAt": "2026-05-27T02:57:26.830Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1779850646831_44",
+      "taskId": "task_1779850646830_41",
+      "stream": "system",
+      "level": "info",
+      "content": "正在排队启动 Hermes 于 /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-27T02:57:26.831Z"
+    },
+    {
+      "id": "log_1779850648217_zzq8aj",
+      "taskId": "task_1779850646830_41",
+      "stream": "system",
+      "level": "info",
+      "content": "Hermes worker 2403467 已启动",
+      "createdAt": "2026-05-27T02:57:28.217Z"
+    },
+    {
+      "id": "log_1779850648229_b6nshi",
+      "taskId": "task_1779850646830_41",
+      "stream": "system",
+      "level": "info",
+      "content": "执行: hermes chat -q \"用 PPT Master 管线制作西电 IDS 滑块验证码破解技术详解PPT。12页内容：封面、背景与整体流程、HTMLParser、验证码图片获取、AES密钥...\" --model deepseek/deepseek-chat",
+      "createdAt": "2026-05-27T02:57:28.229Z"
+    },
+    {
+      "id": "log_1779850648471_1qv2kv",
+      "taskId": "task_1779850646830_41",
+      "stream": "stderr",
+      "level": "error",
+      "content": "⚠️  hermes config: Failed to parse /home/ubuntu/.hermes/config.yaml: while parsing a block mapping\n  in \"/home/ubuntu/.hermes/config.yaml\", line 454, column 3\nexpected <block end>, but found '-'\n  in ",
+      "createdAt": "2026-05-27T02:57:28.471Z"
+    },
+    {
+      "id": "log_1779850651465_973mzc",
+      "taskId": "task_1779850646830_41",
+      "stream": "stdout",
+      "level": "info",
+      "content": "⚠️  Stripped provider prefix from 'deepseek/deepseek-chat'; using",
+      "createdAt": "2026-05-27T02:57:31.465Z"
+    },
+    {
+      "id": "log_1779850651468_zcp3vp",
+      "taskId": "task_1779850646830_41",
+      "stream": "stdout",
+      "level": "info",
+      "content": "'deepseek-chat' for OpenAI Codex.",
+      "createdAt": "2026-05-27T02:57:31.468Z"
+    },
+    {
+      "id": "log_1779850654081_wz1lss",
+      "taskId": "task_1779850646830_41",
+      "stream": "stderr",
+      "level": "error",
+      "content": "Error: Error code: 400 - {'detail': \"The 'deepseek-chat' model is not supported when using Codex with a ChatGPT account.\"}\n\nsession_id: 20260527_105731_076a7e",
+      "createdAt": "2026-05-27T02:57:34.081Z"
+    }
+  ],
+  "artifacts": [],
+  "notifications": [
+    {
+      "id": "ntf_1779850654571_e8u4w3",
+      "taskId": "task_1779850646830_41",
+      "channel": "微信",
+      "eventType": "task.failed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779850646830_41"
+      },
+      "createdAt": "2026-05-27T02:57:34.571Z"
+    }
+  ],
+  "version": 13
+}

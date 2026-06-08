@@ -48,5 +48,13 @@ if [ -f "$HOME/Hermes/config/config.yaml.example" ]; then
 fi
 
 echo ""
+# 7. Restore Task Pulse runtime data
+if [ -d "$BACKUP_DIR/task-pulse-data" ]; then
+  mkdir -p "$HOME/task-pulse"
+  cp -r "$BACKUP_DIR/task-pulse-data" "$HOME/task-pulse/.task-pulse-data"
+  echo "✅ Task Pulse runtime data restored to ~/task-pulse/.task-pulse-data"
+fi
+
+echo ""
 echo "=== Restore complete ==="
 echo "Run 'hermes gateway restart' to apply changes."

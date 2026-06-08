@@ -1,0 +1,200 @@
+{
+  "task": {
+    "id": "task_1779771594181_17",
+    "title": "PPT制作：Hermes Agent 开源框架介绍",
+    "prompt": "使用 PPT Master 为 Hermes Agent 项目生成 9 页深色科技风介绍 PPT，包含项目概述、核心特性、系统架构、模型提供商、安装指南、多平台运行、技术与社区等内容。导出为 hermes_agent_intro.pptx。",
+    "status": "done",
+    "phase": "completed",
+    "category": "ppt",
+    "runner": "hermes",
+    "model": "deepseek/deepseek-chat",
+    "source": "微信",
+    "summary": "Task completed with live SSE demo and polished visuals",
+    "progressText": "Task completed with live SSE demo and polished visuals",
+    "needsHuman": false,
+    "startedAt": "2026-05-26T04:59:54.181Z",
+    "updatedAt": "2026-05-26T05:00:10.188Z",
+    "endedAt": "2026-05-26T05:00:10.187Z",
+    "durationMs": 16007,
+    "eventCount": 7,
+    "logCount": 5,
+    "notificationCount": 2,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "demo",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "demo",
+      "groupId": "group_hermes-配置与验证-https-github-com-zaiyemeiyou404-her",
+      "groupName": "Hermes 配置与验证",
+      "repoLink": "https://github.com/zaiyemeiyou404/Hermes"
+    },
+    "groupId": "group_hermes-配置与验证-https-github-com-zaiyemeiyou404-her",
+    "repoLink": "https://github.com/zaiyemeiyou404/Hermes",
+    "groupName": "Hermes 配置与验证"
+  },
+  "events": [
+    {
+      "id": "evt_1779771610187_29",
+      "taskId": "task_1779771594181_17",
+      "type": "task.completed",
+      "level": "success",
+      "message": "Task completed with live SSE demo and polished visuals",
+      "payload": {
+        "phase": "completed",
+        "progress": 100
+      },
+      "createdAt": "2026-05-26T05:00:10.187Z"
+    },
+    {
+      "id": "evt_1779771606186_27",
+      "taskId": "task_1779771594181_17",
+      "type": "tests.passed",
+      "level": "success",
+      "message": "Lint and route checks passed",
+      "payload": {
+        "phase": "summarizing",
+        "progress": 91
+      },
+      "createdAt": "2026-05-26T05:00:06.186Z"
+    },
+    {
+      "id": "evt_1779771602186_25",
+      "taskId": "task_1779771594181_17",
+      "type": "tests.started",
+      "level": "info",
+      "message": "UI validation and lint checks started",
+      "payload": {
+        "phase": "testing",
+        "progress": 78
+      },
+      "createdAt": "2026-05-26T05:00:02.186Z"
+    },
+    {
+      "id": "evt_1779771598185_23",
+      "taskId": "task_1779771594181_17",
+      "type": "files.changed",
+      "level": "success",
+      "message": "Refined dashboard shell, KPI strip, and task hero",
+      "payload": {
+        "phase": "coding",
+        "progress": 54
+      },
+      "createdAt": "2026-05-26T04:59:58.185Z"
+    },
+    {
+      "id": "evt_1779771597921_22",
+      "taskId": "task_1779771594181_17",
+      "type": "task.reviewed",
+      "level": "success",
+      "message": "审查分类确认完成",
+      "payload": {
+        "groupName": "Hermes 配置与验证"
+      },
+      "createdAt": "2026-05-26T04:59:57.921Z"
+    },
+    {
+      "id": "evt_1779771594984_20",
+      "taskId": "task_1779771594181_17",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Runner started",
+      "payload": {
+        "runner": "hermes"
+      },
+      "createdAt": "2026-05-26T04:59:54.984Z"
+    },
+    {
+      "id": "evt_1779771594181_18",
+      "taskId": "task_1779771594181_17",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "微信",
+        "mode": "demo",
+        "groupId": "group_hermes-配置与验证-github-com-zaiyemeiyou404-hermes",
+        "groupName": "Hermes 配置与验证"
+      },
+      "createdAt": "2026-05-26T04:59:54.181Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1779771595384_21",
+      "taskId": "task_1779771594181_17",
+      "stream": "system",
+      "level": "info",
+      "content": "Runner connected to SSE demo pipeline",
+      "createdAt": "2026-05-26T04:59:55.384Z"
+    },
+    {
+      "id": "log_1779771598187_24",
+      "taskId": "task_1779771594181_17",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Premium shell and overview cards updated",
+      "createdAt": "2026-05-26T04:59:58.187Z"
+    },
+    {
+      "id": "log_1779771602186_26",
+      "taskId": "task_1779771594181_17",
+      "stream": "stdout",
+      "level": "info",
+      "content": "Running lint and smoke route checks",
+      "createdAt": "2026-05-26T05:00:02.186Z"
+    },
+    {
+      "id": "log_1779771606186_28",
+      "taskId": "task_1779771594181_17",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Checks passed. Preparing summary and artifacts",
+      "createdAt": "2026-05-26T05:00:06.186Z"
+    },
+    {
+      "id": "log_1779771610187_30",
+      "taskId": "task_1779771594181_17",
+      "stream": "system",
+      "level": "success",
+      "content": "Task finished successfully",
+      "createdAt": "2026-05-26T05:00:10.187Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1779771610188_32",
+      "taskId": "task_1779771594181_17",
+      "name": "task-pulse-demo.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1779771594181_17",
+      "createdAt": "2026-05-26T05:00:10.188Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1779771610187_31",
+      "taskId": "task_1779771594181_17",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779771594181_17"
+      },
+      "createdAt": "2026-05-26T05:00:10.187Z"
+    },
+    {
+      "id": "ntf_1779771594182_19",
+      "taskId": "task_1779771594181_17",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "queued",
+      "payload": {
+        "taskUrl": "/tasks/task_1779771594181_17"
+      },
+      "createdAt": "2026-05-26T04:59:54.182Z"
+    }
+  ],
+  "version": 20
+}

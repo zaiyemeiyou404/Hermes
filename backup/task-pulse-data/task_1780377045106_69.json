@@ -1,0 +1,187 @@
+{
+  "task": {
+    "id": "task_1780377045106_69",
+    "title": "西电工具书页面 — 部署上线",
+    "prompt": "将用户提供的西电工具书（工具书.html）整理成精美页面，部署到 book.zaiyemeiyou.com。工作包括：1) 润色HTML为现代化样式 2) 通过Caddy反代到 book.zaiyemeiyou.com 3) 获取SSL证书 4) 按用户要求恢复所有原始链接（不删不减）",
+    "status": "done",
+    "phase": "completed",
+    "category": "coding",
+    "runner": "hermes",
+    "model": "gpt-5.4",
+    "source": "微信",
+    "summary": "Task completed with live SSE demo and polished visuals",
+    "progressText": "Task completed with live SSE demo and polished visuals",
+    "needsHuman": false,
+    "startedAt": "2026-06-02T05:10:45.106Z",
+    "updatedAt": "2026-06-02T05:11:01.115Z",
+    "endedAt": "2026-06-02T05:11:01.114Z",
+    "durationMs": 16009,
+    "eventCount": 6,
+    "logCount": 5,
+    "notificationCount": 2,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "demo",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "demo",
+      "groupId": "group_西电工具书页面部署",
+      "groupName": "西电工具书页面部署"
+    },
+    "groupId": "group_西电工具书页面部署",
+    "groupName": "西电工具书页面部署"
+  },
+  "events": [
+    {
+      "id": "evt_1780377061114_80",
+      "taskId": "task_1780377045106_69",
+      "type": "task.completed",
+      "level": "success",
+      "message": "Task completed with live SSE demo and polished visuals",
+      "payload": {
+        "phase": "completed",
+        "progress": 100
+      },
+      "createdAt": "2026-06-02T05:11:01.114Z"
+    },
+    {
+      "id": "evt_1780377057113_78",
+      "taskId": "task_1780377045106_69",
+      "type": "tests.passed",
+      "level": "success",
+      "message": "Lint and route checks passed",
+      "payload": {
+        "phase": "summarizing",
+        "progress": 91
+      },
+      "createdAt": "2026-06-02T05:10:57.113Z"
+    },
+    {
+      "id": "evt_1780377053112_76",
+      "taskId": "task_1780377045106_69",
+      "type": "tests.started",
+      "level": "info",
+      "message": "UI validation and lint checks started",
+      "payload": {
+        "phase": "testing",
+        "progress": 78
+      },
+      "createdAt": "2026-06-02T05:10:53.112Z"
+    },
+    {
+      "id": "evt_1780377049113_74",
+      "taskId": "task_1780377045106_69",
+      "type": "files.changed",
+      "level": "success",
+      "message": "Refined dashboard shell, KPI strip, and task hero",
+      "payload": {
+        "phase": "coding",
+        "progress": 54
+      },
+      "createdAt": "2026-06-02T05:10:49.113Z"
+    },
+    {
+      "id": "evt_1780377045910_72",
+      "taskId": "task_1780377045106_69",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Runner started",
+      "payload": {
+        "runner": "hermes"
+      },
+      "createdAt": "2026-06-02T05:10:45.910Z"
+    },
+    {
+      "id": "evt_1780377045106_70",
+      "taskId": "task_1780377045106_69",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "微信",
+        "mode": "demo",
+        "groupId": "group_西电工具书页面部署",
+        "groupName": "西电工具书页面部署"
+      },
+      "createdAt": "2026-06-02T05:10:45.106Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1780377046310_73",
+      "taskId": "task_1780377045106_69",
+      "stream": "system",
+      "level": "info",
+      "content": "Runner connected to SSE demo pipeline",
+      "createdAt": "2026-06-02T05:10:46.310Z"
+    },
+    {
+      "id": "log_1780377049113_75",
+      "taskId": "task_1780377045106_69",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Premium shell and overview cards updated",
+      "createdAt": "2026-06-02T05:10:49.113Z"
+    },
+    {
+      "id": "log_1780377053112_77",
+      "taskId": "task_1780377045106_69",
+      "stream": "stdout",
+      "level": "info",
+      "content": "Running lint and smoke route checks",
+      "createdAt": "2026-06-02T05:10:53.112Z"
+    },
+    {
+      "id": "log_1780377057114_79",
+      "taskId": "task_1780377045106_69",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Checks passed. Preparing summary and artifacts",
+      "createdAt": "2026-06-02T05:10:57.114Z"
+    },
+    {
+      "id": "log_1780377061115_81",
+      "taskId": "task_1780377045106_69",
+      "stream": "system",
+      "level": "success",
+      "content": "Task finished successfully",
+      "createdAt": "2026-06-02T05:11:01.115Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1780377061115_83",
+      "taskId": "task_1780377045106_69",
+      "name": "task-pulse-demo.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1780377045106_69",
+      "createdAt": "2026-06-02T05:11:01.115Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1780377061115_82",
+      "taskId": "task_1780377045106_69",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1780377045106_69"
+      },
+      "createdAt": "2026-06-02T05:11:01.115Z"
+    },
+    {
+      "id": "ntf_1780377045107_71",
+      "taskId": "task_1780377045106_69",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "queued",
+      "payload": {
+        "taskUrl": "/tasks/task_1780377045106_69"
+      },
+      "createdAt": "2026-06-02T05:10:45.107Z"
+    }
+  ],
+  "version": 19
+}

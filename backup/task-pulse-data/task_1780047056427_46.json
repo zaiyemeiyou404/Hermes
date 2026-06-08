@@ -1,0 +1,200 @@
+{
+  "task": {
+    "id": "task_1780047056427_46",
+    "title": "MiniLCTF 2026 — 27道赛题提炼进现有CTF技能",
+    "prompt": "将 XDSEC MiniLCTF 2026 的 27道赛题（Crypto6+Web6+Pwn6+Reverse5+Misc4）官方题解读一遍，根据技术类别合并进现有的8个CTF技能中",
+    "status": "done",
+    "phase": "completed",
+    "category": "skill",
+    "runner": "hermes",
+    "model": "gpt-5.4",
+    "source": "微信",
+    "summary": "Task completed with live SSE demo and polished visuals",
+    "progressText": "审查通过，任务完成",
+    "needsHuman": false,
+    "startedAt": "2026-05-29T09:30:56.427Z",
+    "updatedAt": "2026-05-29T09:49:20.215Z",
+    "endedAt": "2026-05-29T09:31:12.434Z",
+    "durationMs": 1103788,
+    "eventCount": 7,
+    "logCount": 5,
+    "notificationCount": 2,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "demo",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "demo",
+      "groupId": "group_ctf-writeup-分析",
+      "groupName": "CTF Writeup 分析",
+      "repoLink": ""
+    },
+    "groupId": "group_ctf-writeup-分析",
+    "repoLink": "",
+    "groupName": "CTF Writeup 分析"
+  },
+  "events": [
+    {
+      "id": "evt_1780048160215_61",
+      "taskId": "task_1780047056427_46",
+      "type": "task.reviewed",
+      "level": "success",
+      "message": "审查分类确认完成",
+      "payload": {
+        "groupName": "CTF Writeup 分析"
+      },
+      "createdAt": "2026-05-29T09:49:20.215Z"
+    },
+    {
+      "id": "evt_1780047072435_57",
+      "taskId": "task_1780047056427_46",
+      "type": "task.completed",
+      "level": "success",
+      "message": "Task completed with live SSE demo and polished visuals",
+      "payload": {
+        "phase": "completed",
+        "progress": 100
+      },
+      "createdAt": "2026-05-29T09:31:12.435Z"
+    },
+    {
+      "id": "evt_1780047068434_55",
+      "taskId": "task_1780047056427_46",
+      "type": "tests.passed",
+      "level": "success",
+      "message": "Lint and route checks passed",
+      "payload": {
+        "phase": "summarizing",
+        "progress": 91
+      },
+      "createdAt": "2026-05-29T09:31:08.434Z"
+    },
+    {
+      "id": "evt_1780047064433_53",
+      "taskId": "task_1780047056427_46",
+      "type": "tests.started",
+      "level": "info",
+      "message": "UI validation and lint checks started",
+      "payload": {
+        "phase": "testing",
+        "progress": 78
+      },
+      "createdAt": "2026-05-29T09:31:04.433Z"
+    },
+    {
+      "id": "evt_1780047060435_51",
+      "taskId": "task_1780047056427_46",
+      "type": "files.changed",
+      "level": "success",
+      "message": "Refined dashboard shell, KPI strip, and task hero",
+      "payload": {
+        "phase": "coding",
+        "progress": 54
+      },
+      "createdAt": "2026-05-29T09:31:00.435Z"
+    },
+    {
+      "id": "evt_1780047057230_49",
+      "taskId": "task_1780047056427_46",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Runner started",
+      "payload": {
+        "runner": "hermes"
+      },
+      "createdAt": "2026-05-29T09:30:57.230Z"
+    },
+    {
+      "id": "evt_1780047056427_47",
+      "taskId": "task_1780047056427_46",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "微信",
+        "mode": "demo",
+        "groupId": "group_ctf-writeup-分析",
+        "groupName": "CTF Writeup 分析"
+      },
+      "createdAt": "2026-05-29T09:30:56.427Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1780047057630_50",
+      "taskId": "task_1780047056427_46",
+      "stream": "system",
+      "level": "info",
+      "content": "Runner connected to SSE demo pipeline",
+      "createdAt": "2026-05-29T09:30:57.630Z"
+    },
+    {
+      "id": "log_1780047060435_52",
+      "taskId": "task_1780047056427_46",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Premium shell and overview cards updated",
+      "createdAt": "2026-05-29T09:31:00.435Z"
+    },
+    {
+      "id": "log_1780047064434_54",
+      "taskId": "task_1780047056427_46",
+      "stream": "stdout",
+      "level": "info",
+      "content": "Running lint and smoke route checks",
+      "createdAt": "2026-05-29T09:31:04.434Z"
+    },
+    {
+      "id": "log_1780047068434_56",
+      "taskId": "task_1780047056427_46",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Checks passed. Preparing summary and artifacts",
+      "createdAt": "2026-05-29T09:31:08.434Z"
+    },
+    {
+      "id": "log_1780047072435_58",
+      "taskId": "task_1780047056427_46",
+      "stream": "system",
+      "level": "success",
+      "content": "Task finished successfully",
+      "createdAt": "2026-05-29T09:31:12.435Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1780047072435_60",
+      "taskId": "task_1780047056427_46",
+      "name": "task-pulse-demo.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1780047056427_46",
+      "createdAt": "2026-05-29T09:31:12.435Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1780047072435_59",
+      "taskId": "task_1780047056427_46",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1780047056427_46"
+      },
+      "createdAt": "2026-05-29T09:31:12.435Z"
+    },
+    {
+      "id": "ntf_1780047056430_48",
+      "taskId": "task_1780047056427_46",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "queued",
+      "payload": {
+        "taskUrl": "/tasks/task_1780047056427_46"
+      },
+      "createdAt": "2026-05-29T09:30:56.430Z"
+    }
+  ],
+  "version": 20
+}

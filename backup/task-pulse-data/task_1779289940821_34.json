@@ -1,0 +1,266 @@
+{
+  "task": {
+    "id": "task_1779289940821_34",
+    "title": "实时验证",
+    "prompt": "Echo OK and stop.",
+    "status": "done",
+    "phase": "completed",
+    "category": "coding",
+    "runner": "opencode",
+    "model": "deepseek/deepseek-chat",
+    "source": "test",
+    "summary": "OpenCode session started.",
+    "progressText": "Task completed successfully",
+    "needsHuman": false,
+    "startedAt": "2026-05-20T15:12:20.821Z",
+    "updatedAt": "2026-05-20T15:12:25.818Z",
+    "endedAt": "2026-05-20T15:12:25.818Z",
+    "durationMs": 4997,
+    "eventCount": 9,
+    "logCount": 6,
+    "notificationCount": 3,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "live",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "live",
+      "launcherPid": 3948381,
+      "dataFile": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779289940821_34.json",
+      "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779289940821_34.worker.log",
+      "runner": "opencode",
+      "workerPid": 3948383,
+      "pid": 3948391,
+      "model": "deepseek/deepseek-chat",
+      "sessionID": "ses_1ba0e146fffecYnYgM9DZcya6V",
+      "groupName": "Task Pulse 完善",
+      "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+      "repoLink": "https://github.com/zaiyemeiyou404/task-pulse"
+    },
+    "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+    "repoLink": "https://github.com/zaiyemeiyou404/task-pulse",
+    "groupName": "Task Pulse 完善"
+  },
+  "events": [
+    {
+      "id": "evt_1779289945818_u10l11",
+      "taskId": "task_1779289940821_34",
+      "type": "task.completed",
+      "level": "success",
+      "message": "OpenCode run completed",
+      "payload": {
+        "cost": 0.000226156,
+        "tokens": {
+          "total": 7656,
+          "input": 103,
+          "output": 1,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 7552
+          }
+        },
+        "reason": "stop"
+      },
+      "createdAt": "2026-05-20T15:12:25.818Z"
+    },
+    {
+      "id": "evt_1779289945436_0oa7oe",
+      "taskId": "task_1779289940821_34",
+      "type": "opencode.started",
+      "level": "info",
+      "message": "OpenCode session started",
+      "payload": {
+        "sessionID": "ses_1ba0e146fffecYnYgM9DZcya6V",
+        "runner": "/home/ubuntu/.hermes/node/bin/opencode"
+      },
+      "createdAt": "2026-05-20T15:12:25.436Z"
+    },
+    {
+      "id": "evt_1779289945022_0fc806",
+      "taskId": "task_1779289940821_34",
+      "type": "opencode.tool",
+      "level": "info",
+      "message": "OpenCode used bash",
+      "payload": {
+        "tool": "bash",
+        "status": "completed",
+        "callID": "call_00_ZvVHDbWKJ4ZLbOI6leMs0043"
+      },
+      "createdAt": "2026-05-20T15:12:25.022Z"
+    },
+    {
+      "id": "evt_1779289943732_5k0zvm",
+      "taskId": "task_1779289940821_34",
+      "type": "opencode.started",
+      "level": "info",
+      "message": "OpenCode session started",
+      "payload": {
+        "sessionID": "ses_1ba0e146fffecYnYgM9DZcya6V",
+        "runner": "/home/ubuntu/.hermes/node/bin/opencode"
+      },
+      "createdAt": "2026-05-20T15:12:23.732Z"
+    },
+    {
+      "id": "evt_1779289940871_h5an6k",
+      "taskId": "task_1779289940821_34",
+      "type": "runner.started",
+      "level": "info",
+      "message": "OpenCode process spawned",
+      "payload": {
+        "pid": 3948391,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerPid": 3948383
+      },
+      "createdAt": "2026-05-20T15:12:20.871Z"
+    },
+    {
+      "id": "evt_1779289940863_cmu7oy",
+      "taskId": "task_1779289940821_34",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "Preparing detached OpenCode worker",
+      "payload": {
+        "workerPid": 3948383
+      },
+      "createdAt": "2026-05-20T15:12:20.864Z"
+    },
+    {
+      "id": "evt_1779289940829_38",
+      "taskId": "task_1779289940821_34",
+      "type": "runner.started",
+      "level": "info",
+      "message": "OpenCode worker 已启动",
+      "payload": {
+        "launcherPid": 3948381,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779289940821_34.worker.log",
+        "runner": "opencode"
+      },
+      "createdAt": "2026-05-20T15:12:20.829Z"
+    },
+    {
+      "id": "evt_1779289940822_36",
+      "taskId": "task_1779289940821_34",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "准备启动 OpenCode worker",
+      "payload": {
+        "cwd": "/home/ubuntu/task-pulse",
+        "script": "/home/ubuntu/task-pulse/scripts/task-pulse-live-runner.js",
+        "runner": "opencode"
+      },
+      "createdAt": "2026-05-20T15:12:20.822Z"
+    },
+    {
+      "id": "evt_1779289940821_35",
+      "taskId": "task_1779289940821_34",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "test",
+        "mode": "live"
+      },
+      "createdAt": "2026-05-20T15:12:20.821Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1779289940822_37",
+      "taskId": "task_1779289940821_34",
+      "stream": "system",
+      "level": "info",
+      "content": "正在排队启动 OpenCode 于 /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-20T15:12:20.822Z"
+    },
+    {
+      "id": "log_1779289940864_g0qwmb",
+      "taskId": "task_1779289940821_34",
+      "stream": "system",
+      "level": "info",
+      "content": "Detached worker 3948383 booted",
+      "createdAt": "2026-05-20T15:12:20.864Z"
+    },
+    {
+      "id": "log_1779289940871_5r0g0r",
+      "taskId": "task_1779289940821_34",
+      "stream": "system",
+      "level": "info",
+      "content": "Launching /home/ubuntu/.hermes/node/bin/opencode in /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-20T15:12:20.871Z"
+    },
+    {
+      "id": "log_1779289945022_xpokmu",
+      "taskId": "task_1779289940821_34",
+      "stream": "system",
+      "level": "info",
+      "content": "tool:bash status=completed",
+      "createdAt": "2026-05-20T15:12:25.022Z"
+    },
+    {
+      "id": "log_1779289945777_6vxsyj",
+      "taskId": "task_1779289940821_34",
+      "stream": "stdout",
+      "level": "info",
+      "content": "OK",
+      "createdAt": "2026-05-20T15:12:25.777Z"
+    },
+    {
+      "id": "log_1779289945818_ie3ga9",
+      "taskId": "task_1779289940821_34",
+      "stream": "system",
+      "level": "success",
+      "content": "OpenCode finished. tokens=7656 cost=0.000226156",
+      "createdAt": "2026-05-20T15:12:25.818Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1779289945818_edtijt",
+      "taskId": "task_1779289940821_34",
+      "name": "task_1779289940821_34-summary.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1779289940821_34",
+      "createdAt": "2026-05-20T15:12:25.818Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1779289945818_3go2ff",
+      "taskId": "task_1779289940821_34",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779289940821_34"
+      },
+      "createdAt": "2026-05-20T15:12:25.818Z"
+    },
+    {
+      "id": "ntf_1779289945436_izs2su",
+      "taskId": "task_1779289940821_34",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779289940821_34"
+      },
+      "createdAt": "2026-05-20T15:12:25.436Z"
+    },
+    {
+      "id": "ntf_1779289943733_0rcjzf",
+      "taskId": "task_1779289940821_34",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779289940821_34"
+      },
+      "createdAt": "2026-05-20T15:12:23.733Z"
+    }
+  ],
+  "version": 14
+}

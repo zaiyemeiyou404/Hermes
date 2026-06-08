@@ -1,0 +1,189 @@
+{
+  "task": {
+    "id": "task_1779753994151_1",
+    "title": "整改全部 task 分组、分类和清理过时任务",
+    "prompt": "对所有 23 个 task 重新分配分组（Task Pulse 完善/agent 仓库联调/Hermes 配置备份/日常聊天/代码开发），修复缺失分类，清理过时验证任务",
+    "status": "done",
+    "phase": "completed",
+    "category": "coding",
+    "runner": "hermes",
+    "model": "gpt-5.4",
+    "source": "微信",
+    "summary": "已整改：清理5个过时验证任务，16个任务重新分组（Task Pulse 完善/agent 仓库联调/Hermes 配置备份/日常聊天），修复1个缺失分类",
+    "progressText": "已完成",
+    "needsHuman": false,
+    "startedAt": "2026-05-26T00:06:34.151Z",
+    "updatedAt": "2026-05-26T00:06:50.158Z",
+    "endedAt": "2026-05-26T00:06:50.157Z",
+    "durationMs": 16007,
+    "eventCount": 6,
+    "logCount": 5,
+    "notificationCount": 2,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "demo",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "demo",
+      "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+      "groupName": "Task Pulse 完善",
+      "repoLink": "https://github.com/zaiyemeiyou404/task-pulse"
+    },
+    "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+    "repoLink": "https://github.com/zaiyemeiyou404/task-pulse",
+    "groupName": "Task Pulse 完善"
+  },
+  "events": [
+    {
+      "id": "evt_1779754010158_12",
+      "taskId": "task_1779753994151_1",
+      "type": "task.completed",
+      "level": "success",
+      "message": "Task completed with live SSE demo and polished visuals",
+      "payload": {
+        "phase": "completed",
+        "progress": 100
+      },
+      "createdAt": "2026-05-26T00:06:50.158Z"
+    },
+    {
+      "id": "evt_1779754006155_10",
+      "taskId": "task_1779753994151_1",
+      "type": "tests.passed",
+      "level": "success",
+      "message": "Lint and route checks passed",
+      "payload": {
+        "phase": "summarizing",
+        "progress": 91
+      },
+      "createdAt": "2026-05-26T00:06:46.155Z"
+    },
+    {
+      "id": "evt_1779754002158_8",
+      "taskId": "task_1779753994151_1",
+      "type": "tests.started",
+      "level": "info",
+      "message": "UI validation and lint checks started",
+      "payload": {
+        "phase": "testing",
+        "progress": 78
+      },
+      "createdAt": "2026-05-26T00:06:42.158Z"
+    },
+    {
+      "id": "evt_1779753998155_6",
+      "taskId": "task_1779753994151_1",
+      "type": "files.changed",
+      "level": "success",
+      "message": "Refined dashboard shell, KPI strip, and task hero",
+      "payload": {
+        "phase": "coding",
+        "progress": 54
+      },
+      "createdAt": "2026-05-26T00:06:38.155Z"
+    },
+    {
+      "id": "evt_1779753994954_4",
+      "taskId": "task_1779753994151_1",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Runner started",
+      "payload": {
+        "runner": "hermes"
+      },
+      "createdAt": "2026-05-26T00:06:34.954Z"
+    },
+    {
+      "id": "evt_1779753994151_2",
+      "taskId": "task_1779753994151_1",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "微信",
+        "mode": "demo",
+        "groupId": "group_task-pulse-完善-github-com-zaiyemeiyou404-task-pul",
+        "groupName": "Task Pulse 完善"
+      },
+      "createdAt": "2026-05-26T00:06:34.151Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1779753995354_5",
+      "taskId": "task_1779753994151_1",
+      "stream": "system",
+      "level": "info",
+      "content": "Runner connected to SSE demo pipeline",
+      "createdAt": "2026-05-26T00:06:35.354Z"
+    },
+    {
+      "id": "log_1779753998155_7",
+      "taskId": "task_1779753994151_1",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Premium shell and overview cards updated",
+      "createdAt": "2026-05-26T00:06:38.155Z"
+    },
+    {
+      "id": "log_1779754002159_9",
+      "taskId": "task_1779753994151_1",
+      "stream": "stdout",
+      "level": "info",
+      "content": "Running lint and smoke route checks",
+      "createdAt": "2026-05-26T00:06:42.159Z"
+    },
+    {
+      "id": "log_1779754006155_11",
+      "taskId": "task_1779753994151_1",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Checks passed. Preparing summary and artifacts",
+      "createdAt": "2026-05-26T00:06:46.155Z"
+    },
+    {
+      "id": "log_1779754010158_13",
+      "taskId": "task_1779753994151_1",
+      "stream": "system",
+      "level": "success",
+      "content": "Task finished successfully",
+      "createdAt": "2026-05-26T00:06:50.158Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1779754010158_15",
+      "taskId": "task_1779753994151_1",
+      "name": "task-pulse-demo.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1779753994151_1",
+      "createdAt": "2026-05-26T00:06:50.158Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1779754010158_14",
+      "taskId": "task_1779753994151_1",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779753994151_1"
+      },
+      "createdAt": "2026-05-26T00:06:50.158Z"
+    },
+    {
+      "id": "ntf_1779753994152_3",
+      "taskId": "task_1779753994151_1",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "queued",
+      "payload": {
+        "taskUrl": "/tasks/task_1779753994151_1"
+      },
+      "createdAt": "2026-05-26T00:06:34.152Z"
+    }
+  ],
+  "version": 19
+}

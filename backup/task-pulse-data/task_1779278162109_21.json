@@ -1,0 +1,218 @@
+{
+  "task": {
+    "id": "task_1779278162109_21",
+    "title": "verify sse runner",
+    "prompt": "Respond with exactly SSE_VERIFY_OK and then stop.",
+    "status": "done",
+    "phase": "completed",
+    "runner": "opencode",
+    "model": "deepseek/deepseek-chat",
+    "source": "verification",
+    "summary": "OpenCode session started.",
+    "progressText": "Task completed successfully",
+    "needsHuman": false,
+    "startedAt": "2026-05-20T11:56:02.109Z",
+    "updatedAt": "2026-05-20T11:56:04.965Z",
+    "endedAt": "2026-05-20T11:56:04.964Z",
+    "durationMs": 2856,
+    "eventCount": 7,
+    "logCount": 5,
+    "notificationCount": 2,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "live",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "live",
+      "launcherPid": 3896814,
+      "dataFile": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779278162109_21.json",
+      "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779278162109_21.worker.log",
+      "workerPid": 3896817,
+      "pid": 3896824,
+      "model": "deepseek/deepseek-chat",
+      "sessionID": "ses_1bac1d162fferaSBs78W4CwhBl",
+      "groupName": "Task Pulse 完善",
+      "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+      "repoLink": "https://github.com/zaiyemeiyou404/task-pulse"
+    },
+    "groupId": "group_task-pulse-完善-https-github-com-zaiyemeiyou404-ta",
+    "repoLink": "https://github.com/zaiyemeiyou404/task-pulse",
+    "groupName": "Task Pulse 完善",
+    "category": "coding"
+  },
+  "events": [
+    {
+      "id": "evt_1779278164964_hif60s",
+      "taskId": "task_1779278162109_21",
+      "type": "task.completed",
+      "level": "success",
+      "message": "OpenCode run completed",
+      "payload": {
+        "cost": 0.000218176,
+        "tokens": {
+          "total": 7593,
+          "input": 34,
+          "output": 7,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 7552
+          }
+        },
+        "reason": "stop"
+      },
+      "createdAt": "2026-05-20T11:56:04.965Z"
+    },
+    {
+      "id": "evt_1779278164392_cyquj2",
+      "taskId": "task_1779278162109_21",
+      "type": "opencode.started",
+      "level": "info",
+      "message": "OpenCode session started",
+      "payload": {
+        "sessionID": "ses_1bac1d162fferaSBs78W4CwhBl",
+        "runner": "/home/ubuntu/.hermes/node/bin/opencode"
+      },
+      "createdAt": "2026-05-20T11:56:04.392Z"
+    },
+    {
+      "id": "evt_1779278162162_qgd8d5",
+      "taskId": "task_1779278162109_21",
+      "type": "runner.started",
+      "level": "info",
+      "message": "OpenCode process spawned",
+      "payload": {
+        "pid": 3896824,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerPid": 3896817
+      },
+      "createdAt": "2026-05-20T11:56:02.162Z"
+    },
+    {
+      "id": "evt_1779278162156_6i3z6k",
+      "taskId": "task_1779278162109_21",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "Preparing detached OpenCode worker",
+      "payload": {
+        "workerPid": 3896817
+      },
+      "createdAt": "2026-05-20T11:56:02.156Z"
+    },
+    {
+      "id": "evt_1779278162114_25",
+      "taskId": "task_1779278162109_21",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Detached live runner spawned",
+      "payload": {
+        "launcherPid": 3896814,
+        "cwd": "/home/ubuntu/task-pulse",
+        "workerLog": "/home/ubuntu/task-pulse/.task-pulse-data/task_1779278162109_21.worker.log"
+      },
+      "createdAt": "2026-05-20T11:56:02.114Z"
+    },
+    {
+      "id": "evt_1779278162109_23",
+      "taskId": "task_1779278162109_21",
+      "type": "runner.preparing",
+      "level": "info",
+      "message": "Preparing detached OpenCode worker",
+      "payload": {
+        "cwd": "/home/ubuntu/task-pulse",
+        "script": "/home/ubuntu/task-pulse/scripts/task-pulse-live-runner.js"
+      },
+      "createdAt": "2026-05-20T11:56:02.109Z"
+    },
+    {
+      "id": "evt_1779278162109_22",
+      "taskId": "task_1779278162109_21",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "verification",
+        "mode": "live"
+      },
+      "createdAt": "2026-05-20T11:56:02.109Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1779278162110_24",
+      "taskId": "task_1779278162109_21",
+      "stream": "system",
+      "level": "info",
+      "content": "Queueing detached live runner in /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-20T11:56:02.110Z"
+    },
+    {
+      "id": "log_1779278162156_rc5ovy",
+      "taskId": "task_1779278162109_21",
+      "stream": "system",
+      "level": "info",
+      "content": "Detached worker 3896817 booted",
+      "createdAt": "2026-05-20T11:56:02.156Z"
+    },
+    {
+      "id": "log_1779278162162_qrpl17",
+      "taskId": "task_1779278162109_21",
+      "stream": "system",
+      "level": "info",
+      "content": "Launching /home/ubuntu/.hermes/node/bin/opencode in /home/ubuntu/task-pulse",
+      "createdAt": "2026-05-20T11:56:02.162Z"
+    },
+    {
+      "id": "log_1779278164922_y65e35",
+      "taskId": "task_1779278162109_21",
+      "stream": "stdout",
+      "level": "info",
+      "content": "SSE_VERIFY_OK",
+      "createdAt": "2026-05-20T11:56:04.922Z"
+    },
+    {
+      "id": "log_1779278164965_c7t2uj",
+      "taskId": "task_1779278162109_21",
+      "stream": "system",
+      "level": "success",
+      "content": "OpenCode finished. tokens=7593 cost=0.000218176",
+      "createdAt": "2026-05-20T11:56:04.965Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1779278164965_vxhmlk",
+      "taskId": "task_1779278162109_21",
+      "name": "task_1779278162109_21-summary.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1779278162109_21",
+      "createdAt": "2026-05-20T11:56:04.965Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1779278164965_b9pe7k",
+      "taskId": "task_1779278162109_21",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779278162109_21"
+      },
+      "createdAt": "2026-05-20T11:56:04.965Z"
+    },
+    {
+      "id": "ntf_1779278164392_3fbenf",
+      "taskId": "task_1779278162109_21",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1779278162109_21"
+      },
+      "createdAt": "2026-05-20T11:56:04.392Z"
+    }
+  ],
+  "version": 11
+}

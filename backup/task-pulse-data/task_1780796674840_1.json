@@ -1,0 +1,186 @@
+{
+  "task": {
+    "id": "task_1780796674840_1",
+    "title": "《帝国边疆》第一卷提纲与首章创作",
+    "prompt": "为长篇科幻小说《帝国边疆》整理第一卷《边疆开拓》详细提纲，并撰写第1章《阿刻戎的红色晨雾》。要求补充时代背景，全文以主角林曜第一人称自述为主，突出帝国边疆的生存感、制度压迫感与地下异常钩子。",
+    "status": "done",
+    "phase": "completed",
+    "category": "novel",
+    "runner": "hermes",
+    "model": "gpt-5.4",
+    "source": "微信",
+    "summary": "Task completed with live SSE demo and polished visuals",
+    "progressText": "Task completed with live SSE demo and polished visuals",
+    "needsHuman": false,
+    "startedAt": "2026-06-07T01:44:34.840Z",
+    "updatedAt": "2026-06-07T01:44:50.847Z",
+    "endedAt": "2026-06-07T01:44:50.846Z",
+    "durationMs": 16007,
+    "eventCount": 6,
+    "logCount": 5,
+    "notificationCount": 2,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "demo",
+      "cwd": "/home/ubuntu/novel",
+      "runnerMode": "demo",
+      "groupId": "group_帝国边疆-小说创作",
+      "groupName": "帝国边疆 小说创作"
+    },
+    "groupId": "group_帝国边疆-小说创作"
+  },
+  "events": [
+    {
+      "id": "evt_1780796690847_12",
+      "taskId": "task_1780796674840_1",
+      "type": "task.completed",
+      "level": "success",
+      "message": "Task completed with live SSE demo and polished visuals",
+      "payload": {
+        "phase": "completed",
+        "progress": 100
+      },
+      "createdAt": "2026-06-07T01:44:50.847Z"
+    },
+    {
+      "id": "evt_1780796686847_10",
+      "taskId": "task_1780796674840_1",
+      "type": "tests.passed",
+      "level": "success",
+      "message": "Lint and route checks passed",
+      "payload": {
+        "phase": "summarizing",
+        "progress": 91
+      },
+      "createdAt": "2026-06-07T01:44:46.847Z"
+    },
+    {
+      "id": "evt_1780796682844_8",
+      "taskId": "task_1780796674840_1",
+      "type": "tests.started",
+      "level": "info",
+      "message": "UI validation and lint checks started",
+      "payload": {
+        "phase": "testing",
+        "progress": 78
+      },
+      "createdAt": "2026-06-07T01:44:42.844Z"
+    },
+    {
+      "id": "evt_1780796678846_6",
+      "taskId": "task_1780796674840_1",
+      "type": "files.changed",
+      "level": "success",
+      "message": "Refined dashboard shell, KPI strip, and task hero",
+      "payload": {
+        "phase": "coding",
+        "progress": 54
+      },
+      "createdAt": "2026-06-07T01:44:38.846Z"
+    },
+    {
+      "id": "evt_1780796675643_4",
+      "taskId": "task_1780796674840_1",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Runner started",
+      "payload": {
+        "runner": "hermes"
+      },
+      "createdAt": "2026-06-07T01:44:35.643Z"
+    },
+    {
+      "id": "evt_1780796674840_2",
+      "taskId": "task_1780796674840_1",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "微信",
+        "mode": "demo",
+        "groupId": "group_帝国边疆-小说创作",
+        "groupName": "帝国边疆 小说创作"
+      },
+      "createdAt": "2026-06-07T01:44:34.840Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1780796676043_5",
+      "taskId": "task_1780796674840_1",
+      "stream": "system",
+      "level": "info",
+      "content": "Runner connected to SSE demo pipeline",
+      "createdAt": "2026-06-07T01:44:36.043Z"
+    },
+    {
+      "id": "log_1780796678846_7",
+      "taskId": "task_1780796674840_1",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Premium shell and overview cards updated",
+      "createdAt": "2026-06-07T01:44:38.846Z"
+    },
+    {
+      "id": "log_1780796682844_9",
+      "taskId": "task_1780796674840_1",
+      "stream": "stdout",
+      "level": "info",
+      "content": "Running lint and smoke route checks",
+      "createdAt": "2026-06-07T01:44:42.844Z"
+    },
+    {
+      "id": "log_1780796686847_11",
+      "taskId": "task_1780796674840_1",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Checks passed. Preparing summary and artifacts",
+      "createdAt": "2026-06-07T01:44:46.847Z"
+    },
+    {
+      "id": "log_1780796690847_13",
+      "taskId": "task_1780796674840_1",
+      "stream": "system",
+      "level": "success",
+      "content": "Task finished successfully",
+      "createdAt": "2026-06-07T01:44:50.847Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1780796690847_15",
+      "taskId": "task_1780796674840_1",
+      "name": "task-pulse-demo.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1780796674840_1",
+      "createdAt": "2026-06-07T01:44:50.847Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1780796690847_14",
+      "taskId": "task_1780796674840_1",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1780796674840_1"
+      },
+      "createdAt": "2026-06-07T01:44:50.847Z"
+    },
+    {
+      "id": "ntf_1780796674842_3",
+      "taskId": "task_1780796674840_1",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "queued",
+      "payload": {
+        "taskUrl": "/tasks/task_1780796674840_1"
+      },
+      "createdAt": "2026-06-07T01:44:34.842Z"
+    }
+  ],
+  "version": 19
+}

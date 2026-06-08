@@ -2,7 +2,7 @@
 
 这是我的 Hermes Agent 完整配置备份（含记忆、技能、脚本、人设、外部工具参考）。
 
-> ⚠️ 外部工具（PPT Master、Task Pulse、CloakBrowser 等）是独立项目，本仓库只保存安装说明和引用配置，不包含完整项目文件。
+> ⚠️ 外部工具（PPT Master、Task Pulse、CloakBrowser 等）是独立项目，本仓库只保存安装说明、引用配置和运行时数据快照，不包含完整项目文件。
 
 ## 目录结构
 
@@ -18,12 +18,14 @@ Hermes/
 │   ├── scripts/                # 自定义脚本
 │   │   ├── cloakbrowser-server.py   # CloakBrowser 服务端
 │   │   └── task-pulse-cleanup.py    # Task Pulse 每日清理
-│   └── persona/
-│       └── AGENTS.md           # Agent 人设/开发指南
+│   ├── persona/
+│   │   └── AGENTS.md           # Agent 人设/开发指南
+│   └── task-pulse-data/        # Task Pulse 运行时数据快照
 ├── config/
 │   └── config.yaml.example     # 配置模板（敏感信息已脱敏）
 └── references/
     ├── ppt-master.md           # PPT Master 技能说明
+    ├── task-pulse.md           # Task Pulse 项目配置
     └── external-tools.md       # 外部工具清单（CloakBrowser, OpenCode 等）
 ```
 
@@ -80,7 +82,15 @@ npm install -g @opencode-ai/cli
 pip install cloakbrowser
 ```
 
-### 6. 重启 Hermes
+### 6. 恢复 Task Pulse 运行时数据
+
+```bash
+# 如果备份中包含 task-pulse-data 快照，setup.sh 会自动恢复
+# 手动操作：
+cp -r ~/Hermes/backup/task-pulse-data ~/task-pulse/.task-pulse-data
+```
+
+### 7. 重启 Hermes
 
 ```bash
 hermes gateway restart

@@ -1,0 +1,189 @@
+{
+  "task": {
+    "id": "task_1780531950137_89",
+    "title": "agent 仓库完善 — README 和 .gitignore",
+    "prompt": "完善 zaiyemeiyou404/agent 仓库的 README 和添加 .gitignore",
+    "status": "done",
+    "phase": "completed",
+    "category": "coding",
+    "runner": "opencode",
+    "model": "deepseek/deepseek-chat",
+    "source": "manual",
+    "summary": "Task completed with live SSE demo and polished visuals",
+    "progressText": "Task completed with live SSE demo and polished visuals",
+    "needsHuman": false,
+    "startedAt": "2026-06-04T00:12:30.137Z",
+    "updatedAt": "2026-06-04T00:12:46.144Z",
+    "endedAt": "2026-06-04T00:12:46.142Z",
+    "durationMs": 16007,
+    "eventCount": 6,
+    "logCount": 5,
+    "notificationCount": 2,
+    "progressPercent": 100,
+    "metadata": {
+      "mode": "demo",
+      "cwd": "/home/ubuntu/task-pulse",
+      "runnerMode": "demo",
+      "groupId": "group_agent-仓库完善-https-github-com-zaiyemeiyou404-agent",
+      "groupName": "Agent 仓库完善",
+      "repoLink": "https://github.com/zaiyemeiyou404/agent"
+    },
+    "groupId": "group_agent-仓库完善-https-github-com-zaiyemeiyou404-agent",
+    "repoLink": "https://github.com/zaiyemeiyou404/agent",
+    "groupName": "Agent 仓库完善"
+  },
+  "events": [
+    {
+      "id": "evt_1780531966143_110",
+      "taskId": "task_1780531950137_89",
+      "type": "task.completed",
+      "level": "success",
+      "message": "Task completed with live SSE demo and polished visuals",
+      "payload": {
+        "phase": "completed",
+        "progress": 100
+      },
+      "createdAt": "2026-06-04T00:12:46.143Z"
+    },
+    {
+      "id": "evt_1780531962141_104",
+      "taskId": "task_1780531950137_89",
+      "type": "tests.passed",
+      "level": "success",
+      "message": "Lint and route checks passed",
+      "payload": {
+        "phase": "summarizing",
+        "progress": 91
+      },
+      "createdAt": "2026-06-04T00:12:42.141Z"
+    },
+    {
+      "id": "evt_1780531958142_100",
+      "taskId": "task_1780531950137_89",
+      "type": "tests.started",
+      "level": "info",
+      "message": "UI validation and lint checks started",
+      "payload": {
+        "phase": "testing",
+        "progress": 78
+      },
+      "createdAt": "2026-06-04T00:12:38.142Z"
+    },
+    {
+      "id": "evt_1780531954140_96",
+      "taskId": "task_1780531950137_89",
+      "type": "files.changed",
+      "level": "success",
+      "message": "Refined dashboard shell, KPI strip, and task hero",
+      "payload": {
+        "phase": "coding",
+        "progress": 54
+      },
+      "createdAt": "2026-06-04T00:12:34.140Z"
+    },
+    {
+      "id": "evt_1780531950939_94",
+      "taskId": "task_1780531950137_89",
+      "type": "runner.started",
+      "level": "info",
+      "message": "Runner started",
+      "payload": {
+        "runner": "opencode"
+      },
+      "createdAt": "2026-06-04T00:12:30.939Z"
+    },
+    {
+      "id": "evt_1780531950137_90",
+      "taskId": "task_1780531950137_89",
+      "type": "task.created",
+      "level": "info",
+      "message": "Task created",
+      "payload": {
+        "source": "manual",
+        "mode": "demo",
+        "groupId": "group_agent-仓库完善-github-com-zaiyemeiyou404-agent",
+        "groupName": "Agent 仓库完善"
+      },
+      "createdAt": "2026-06-04T00:12:30.137Z"
+    }
+  ],
+  "logs": [
+    {
+      "id": "log_1780531951339_95",
+      "taskId": "task_1780531950137_89",
+      "stream": "system",
+      "level": "info",
+      "content": "Runner connected to SSE demo pipeline",
+      "createdAt": "2026-06-04T00:12:31.339Z"
+    },
+    {
+      "id": "log_1780531954140_97",
+      "taskId": "task_1780531950137_89",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Premium shell and overview cards updated",
+      "createdAt": "2026-06-04T00:12:34.140Z"
+    },
+    {
+      "id": "log_1780531958142_101",
+      "taskId": "task_1780531950137_89",
+      "stream": "stdout",
+      "level": "info",
+      "content": "Running lint and smoke route checks",
+      "createdAt": "2026-06-04T00:12:38.142Z"
+    },
+    {
+      "id": "log_1780531962141_105",
+      "taskId": "task_1780531950137_89",
+      "stream": "stdout",
+      "level": "success",
+      "content": "Checks passed. Preparing summary and artifacts",
+      "createdAt": "2026-06-04T00:12:42.141Z"
+    },
+    {
+      "id": "log_1780531966143_111",
+      "taskId": "task_1780531950137_89",
+      "stream": "system",
+      "level": "success",
+      "content": "Task finished successfully",
+      "createdAt": "2026-06-04T00:12:46.143Z"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "artifact_1780531966144_113",
+      "taskId": "task_1780531950137_89",
+      "name": "task-pulse-demo.json",
+      "kind": "json",
+      "path": "/api/tasks/task_1780531950137_89",
+      "createdAt": "2026-06-04T00:12:46.144Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "ntf_1780531966143_112",
+      "taskId": "task_1780531950137_89",
+      "channel": "weixin",
+      "eventType": "task.completed",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "sent",
+      "payload": {
+        "taskUrl": "/tasks/task_1780531950137_89"
+      },
+      "createdAt": "2026-06-04T00:12:46.143Z"
+    },
+    {
+      "id": "ntf_1780531950138_91",
+      "taskId": "task_1780531950137_89",
+      "channel": "weixin",
+      "eventType": "task.started",
+      "target": "weixin:o9cq8070Ill3Nq2HQBoDp8qBgPts@im.wechat",
+      "status": "queued",
+      "payload": {
+        "taskUrl": "/tasks/task_1780531950137_89"
+      },
+      "createdAt": "2026-06-04T00:12:30.138Z"
+    }
+  ],
+  "version": 19
+}
