@@ -14,11 +14,12 @@ Hermes/
 │   ├── memories/               # 记忆文件（你是谁，我是谁）
 │   │   ├── MEMORY.md           # 环境/项目/工具笔记
 │   │   └── USER.md             # 用户画像（偏好、沟通风格）
-│   ├── skills/                 # 技能文件（task-pulse-workflow 等）
+│   ├── skills/                 # 当前活跃 skills 全量备份（已排除缓存/归档）
 │   ├── scripts/                # 自定义脚本
-│   │   └── cloakbrowser-server.py  # CloakBrowser 服务端
+│   │   ├── cloakbrowser-server.py   # CloakBrowser 服务端
+│   │   └── task-pulse-cleanup.py    # Task Pulse 每日清理
 │   └── persona/
-│       └── AGENTS.md           # Agent 人设/人格文件
+│       └── AGENTS.md           # Agent 人设/开发指南
 ├── config/
 │   └── config.yaml.example     # 配置模板（敏感信息已脱敏）
 └── references/
@@ -47,10 +48,11 @@ cp ~/Hermes/backup/memories/* ~/.hermes/memories/
 cp -r ~/Hermes/backup/skills/* ~/.hermes/skills/
 
 # 恢复人设
-cp ~/Hermes/backup/persona/* ~/.hermes/hermes-agent/agent/persona/
+cp ~/Hermes/backup/persona/AGENTS.md ~/.hermes/hermes-agent/AGENTS.md
 
-# 恢复浏览器脚本
+# 恢复脚本
 cp ~/Hermes/backup/scripts/* ~/.hermes/scripts/
+chmod +x ~/.hermes/scripts/*.py
 
 # 配置 config.yaml
 cp ~/Hermes/config/config.yaml.example ~/.hermes/config.yaml
@@ -87,5 +89,7 @@ hermes gateway restart
 ## 注意事项
 
 - **不要提交敏感信息**：`.env`、`auth.json`、`config.yaml`（含真实 token）不在备份范围内
+- `backup/skills/` 是当前服务器 **活跃 skills 集合** 的镜像备份；缓存、归档、hub 索引等已排除
+- `config/config.yaml.example` 由当前服务器 `~/.hermes/config.yaml` 脱敏导出，保留行为配置但不保留密钥
 - 每次修改技能或记忆后，记得 `cd ~/Hermes && git commit -am "update" && git push`
 - 在新机器上执行 `setup.sh` 一键迁移（见下）

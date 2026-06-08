@@ -7,7 +7,7 @@ HERMES_HOME="${HERMES_HOME:-$HOME/.hermes}"
 BACKUP_DIR="$HOME/Hermes/backup"
 
 # 1. Ensure Hermes config directory exists
-mkdir -p "$HERMES_HOME/memories" "$HERMES_HOME/scripts" "$HERMES_HOME/hermes-agent"
+mkdir -p "$HERMES_HOME/memories" "$HERMES_HOME/scripts" "$HERMES_HOME/hermes-agent" "$HERMES_HOME/skills"
 
 # 2. Restore memory
 if [ -f "$BACKUP_DIR/memories/MEMORY.md" ]; then
@@ -19,21 +19,28 @@ if [ -f "$BACKUP_DIR/memories/USER.md" ]; then
   echo "✅ User profile restored"
 fi
 
-# 3. Restore scripts
-if [ -f "$BACKUP_DIR/scripts/cloakbrowser-server.py" ]; then
-  cp "$BACKUP_DIR/scripts/cloakbrowser-server.py" "$HERMES_HOME/scripts/"
-  chmod +x "$HERMES_HOME/scripts/cloakbrowser-server.py"
-  echo "✅ CloakBrowser script restored"
+# 3. Restore active skills
+if [ -d "$BACKUP_DIR/skills" ]; then
+  cp -r "$BACKUP_DIR/skills/." "$HERMES_HOME/skills/"
+  echo "✅ Skills restored"
 fi
 
-# 4. Restore persona
+# 4. Restore scripts
+for script in cloakbrowser-server.py task-pulse-cleanup.py; do
+  if [ -f "$BACKUP_DIR/scripts/$script" ]; then
+    cp "$BACKUP_DIR/scripts/$script" "$HERMES_HOME/scripts/"
+    chmod +x "$HERMES_HOME/scripts/$script"
+    echo "✅ $script restored"
+  fi
+done
+
+# 5. Restore persona (AGENTS.md — Hermes Agent development guide)
 if [ -f "$BACKUP_DIR/persona/AGENTS.md" ]; then
-  # Persona typically goes in the project root or agent config
-  cp "$BACKUP_DIR/persona/AGENTS.md" "$HERMES_HOME/hermes-agent/AGENTS.md" 2>/dev/null || true
-  echo "✅ Persona restored"
+  cp "$BACKUP_DIR/persona/AGENTS.md" "$HERMES_HOME/hermes-agent/AGENTS.md"
+  echo "✅ Persona (AGENTS.md) restored"
 fi
 
-# 5. Config example hint
+# 6. Config example hint
 if [ -f "$HOME/Hermes/config/config.yaml.example" ]; then
   echo ""
   echo "⚠️  Config template available at: ~/Hermes/config/config.yaml.example"
